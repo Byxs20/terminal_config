@@ -11,7 +11,7 @@ local config = wezterm.config_builder()
 
 -------------------- 颜色配置 --------------------
 config.color_scheme = 'tokyonight_moon'
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
 config.show_tab_index_in_tab_bar = true
@@ -60,7 +60,8 @@ config.keys = {
     key = '!',
     mods = 'CTRL|SHIFT',
     action = act.SpawnCommandInNewTab {
-      domain = { DomainName = 'WSL:Ubuntu-20.04' },
+      domain = 'DefaultDomain',
+      args = {'wsl', '-d', 'Ubuntu-20.04'},
     }
   },
 }
@@ -103,6 +104,7 @@ config.mouse_bindings = {
 -- }
 
 return config
+
 ```
 
 ## nushell
