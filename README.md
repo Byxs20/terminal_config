@@ -31,7 +31,7 @@ config.initial_rows = 30
 -- 设置默认的启动shell
 config.set_environment_variables = {
   -- COMSPEC = 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe',
-  COMSPEC = 'D:\\Program Files\\nu\\bin\\nu.exe',
+  COMSPEC = 'C:\\Users\\97766\\AppData\\Local\\Programs\\nu\\bin\\nu.exe',
 }
 
 -------------------- 键盘绑定 --------------------
